@@ -1,0 +1,18 @@
+#!/bin/bash
+  
+printf "Hello Enter file name and we will check is file exists or not: "
+read fname
+
+while true;
+
+do
+        if test -f "$fname"; then
+        echo "$fname exists."
+        break
+
+        else
+        echo "file does not exists"
+        printf "enter file name again: "
+        read fname
+        fi
+done

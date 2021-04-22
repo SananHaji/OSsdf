@@ -1,0 +1,27 @@
+#!/bin/bash
+
+printf "Hello! Select a number between 5 and 12: "
+read num
+  
+while true;
+
+do
+        if [ "$num" -eq "$num" ] 2>/dev/null
+        then
+
+                if  [ "$num" -ge 5 ] && [ "$num" -le 12 ];
+                then
+                         printf "All set! Thanks for following directions!\n"
+                        break
+                else
+
+                        printf "Sorry, it looks like the input you selected isn't between 5-12\n"
+                        printf "Please select another number: "
+                        read num
+                fi
+        else
+        printf "it is not number\n"
+        printf "Please select number: "
+        read num
+        fi
+done
